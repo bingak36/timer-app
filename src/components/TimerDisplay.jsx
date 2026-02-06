@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-function TimerDisplay() {
-  return (
-    <div>TimerDisplay</div>
-  )
-}
+const TimerDisplay = ({ time }) => {
+    return (
+        <div className="timer-display">
+            {time}
+        </div>
+    );
+};
 
-export default TimerDisplay
+export default TimerDisplay;
