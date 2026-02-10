@@ -6,15 +6,16 @@ const UserDetail = () => {
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
-
-        setLoading(true)
         axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`)
             .then((res) => {
                 setUser(res.data)
                 setLoading(false)
             })
+            .catch(() => {
+                setLoading(false)
+            })
 
-
+        setLoading(true)
     }, [userId])
 
 

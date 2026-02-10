@@ -3,6 +3,7 @@ import './App.css'
 import UserList from './components/UserList'
 import PostList from './components/PostList'
 import UserDetail from './components/UserDetail'
+import DummyJson from './components/DummyJson'
 import axios from 'axios'
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
       <h1>Axios</h1>
       {/* <UserList />
       <PostList /> */}
-      <UserDetail />
+      {/* <UserDetail /> */}
+        <DummyJson />
     </div>
   )
 }
